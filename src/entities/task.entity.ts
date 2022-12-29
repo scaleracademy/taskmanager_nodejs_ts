@@ -13,4 +13,9 @@ export class Task {
     this.deadline = new Date(deadline); // TODO: validate the date string YYYY-MM-DD
     this.completed = false;
   }
+
+  public setDeadline(deadline: string): void {
+    this.deadline = new Date(deadline); // TODO: validate the date string YYYY-MM-DD
+    // TODO: validate deadline is not in the past
+  }
 }
