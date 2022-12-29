@@ -1,3 +1,4 @@
+import { Note } from './note.entity';
 
 export class Task {
   id: number;
@@ -5,6 +6,7 @@ export class Task {
   description: string;
   deadline: Date;
   completed: boolean;
+  notes?: Note[];
 
   constructor(id: number, title: string, description: string, deadline: string) {
     this.id = id;

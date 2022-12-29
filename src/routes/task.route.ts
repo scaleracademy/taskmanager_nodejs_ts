@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import { TaskFilter, taskRepo } from '../repositories/task.repository';
+import { notesRepo } from '../repositories/note.repository';
 
 const route = Router();
 
@@ -41,6 +42,8 @@ route.get('/:id', (req, res) => {
     res.status(404).json({ error: 'Task not found' });
     return;
   }
+  const notes = notesRepo.getNotes(taskId);
+  task.notes = notes;
   res.status(200).json(task);
 })
 
