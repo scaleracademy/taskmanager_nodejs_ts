@@ -7,7 +7,10 @@
     "build": "tsc",
     "prestart": "npm run build",
     "start": "node dist/server.js",
-    "test": "ts-mocha --project tsconfig.json --paths tests/**/*.spec.ts"
+    "test": "ts-mocha --project tsconfig.json --paths tests/**/*.spec.ts",
+    "coverage": "nyc npm test",
+    "precoverage:report": "npm run coverage",
+    "coverage:report": "nyc report --reporter=html --report-dir=coverage"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +20,7 @@
     "@types/mocha": "^10.0.1",
     "chai": "^4.3.7",
     "mocha": "^10.2.0",
+    "nyc": "^15.1.0",
     "ts-mocha": "^10.0.0",
     "typescript": "^4.9.4"
   },
