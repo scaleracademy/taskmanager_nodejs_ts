@@ -1,5 +1,8 @@
 # Task Manager API (Node.js + TypeScript)
 
+[![Build and Test NodeJS](https://github.com/scaleracademy/taskmanager_nodejs_ts/actions/workflows/build.yml/badge.svg)](https://github.com/scaleracademy/taskmanager_nodejs_ts/actions/workflows/build.yml)
+[![codecov](https://codecov.io/github/scaleracademy/taskmanager_nodejs_ts/branch/main/graph/badge.svg?token=qSgFhEib2M)](https://codecov.io/github/scaleracademy/taskmanager_nodejs_ts)
+
 ## Technologies
 
 - [Node.js](https://nodejs.org/en/)
