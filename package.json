@@ -9,8 +9,8 @@
     "start": "node dist/server.js",
     "test": "ts-mocha --project tsconfig.json --paths tests/**/*.spec.ts",
     "coverage": "nyc npm test",
-    "precoverage:report": "npm run coverage",
-    "coverage:report": "nyc report --reporter=html --report-dir=coverage"
+    "report:html": "nyc report --reporter=html --report-dir=coverage",
+    "report:lcov": "nyc report --reporter=lcov --report-dir=coverage"
   },
   "author": "",
   "license": "ISC",
